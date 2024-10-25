@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Indumentaria</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <div class="me-2 position-relative" id="cart-icon" style="cursor: pointer;">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart.png" alt="Carrito" />
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        id="cart-count">0</span>
+                </div>
+                <a class="navbar-brand" href="#">Tienda</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consultas.html">Consultas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="card border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <img src="img/lino.jpg" class="card-img-top rounded-t-lg h-60 object-contain" alt="Camisa de Lino">
+                <div class="card-body">
+                    <h5 class="card-title font-bold text-lg">Camisa de Lino</h5>
+                    <p class="card-text text-gray-600">Elegante camisa de lino 100% natural, ideal para climas cálidos gracias a su transpirabilidad y comodidad.</p>
+                    <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <img src="img/gorra.jpg" class="card-img-top rounded-t-lg h-60 object-contain" alt="Gorra">
+                <div class="card-body">
+                    <h5 class="card-title font-bold text-lg">Gorra</h5>
+                    <p class="card-text text-gray-600">Gorra deportiva de algodón con visera ajustable. Protege del sol con estilo en tus actividades al aire libre.</p>
+                    <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <img src="img/bermuda1.jpg" class="card-img-top rounded-t-lg h-60 object-contain" alt="Bermuda">
+                <div class="card-body">
+                    <h5 class="card-title font-bold text-lg">Bermuda</h5>
+                    <p class="card-text text-gray-600">Bermuda casual de algodón con ajuste relajado, perfecta para el verano y días de descanso.</p>
+                    <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <img src="img/remera.jpg" class="card-img-top rounded-t-lg h-60 object-contain" alt="Remera">
+                <div class="card-body">
+                    <h5 class="card-title font-bold text-lg">Remera</h5>
+                    <p class="card-text text-gray-600">Remera básica de algodón, disponible en varios colores, ideal para combinar con cualquier look casual.</p>
+                    <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <img src="img/buzo.jpg" class="card-img-top rounded-t-lg h-60 object-contain" alt="Hoodie con Capucha">
+                <div class="card-body">
+                    <h5 class="card-title font-bold text-lg">Hoodie con Capucha</h5>
+                    <p class="card-text text-gray-600">Hoodie con capucha y bolsillo frontal, confeccionado en algodón suave para máxima comodidad en días fríos.</p>
+                    <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <img src="img/buzo1.jpg" class="card-img-top rounded-t-lg h-60 object-contain" alt="Hoodie con Capucha">
+                <div class="card-body">
+                    <h5 class="card-title font-bold text-lg">Hoodie con Capucha</h5>
+                    <p class="card-text text-gray-600">Moderno hoodie con capucha ajustable, diseñado para ofrecer calidez y estilo urbano en cualquier momento.</p>
+                    <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="cart-items">
+                    El carrito está vacío.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <span class="font-bold">©NewTopia</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

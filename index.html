@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Mi Empresa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+      .cursive {
+        font-family: "Dancing Script", cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <section
+      class="relative h-screen flex items-center justify-center bg-cover bg-center"
+      style="
+        background-image: url(`https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xataka.com%2Fempresas-y-economia%2Famazon-style-asi-dentro-primera-muy-tecnologica-tienda-ropa-fisica-compania&psig=AOvVaw0v2SfbTbaYrx_GH_lWlKIe&ust=1729613107199000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDfz4rtn4kDFQAAAAAdAAAAABAJ`);
+      "
+    >
+      <!-- Overlay oscuro -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Contenido del Hero -->
+      <div class="relative z-10 text-center text-white">
+        <h1 class="text-6xl cursive font-bold mb-6">NewTopia</h1>
+        <p class="text-xl mb-8">
+          Ofrecemos lo mejor para nuestros clientes con productos de alta
+          calidad y un compromiso excepcional.
+        </p>
+        <a
+          href="productos.html"
+          class="bg-green-500 hover:bg-green-600 text-white py-3 px-8 rounded-full text-lg transition duration-300"
+          >Descubre más</a
+        >
+      </div>
+    </section>
+
+    <!-- Sección de Valores -->
+    <section class="container mx-auto px-6 py-12">
+      <h2 class="text-4xl font-semibold text-center mb-12">Nuestros Valores</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+          <h3 class="text-2xl font-bold mb-4">Innovación</h3>
+          <p>
+            Nos mantenemos a la vanguardia para ofrecer siempre lo último en
+            moda y tendencias.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+          <h3 class="text-2xl font-bold mb-4">Calidad</h3>
+          <p>
+            Nos comprometemos a brindar productos de la más alta calidad,
+            garantizando la satisfacción de nuestros clientes.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+          <h3 class="text-2xl font-bold mb-4">Sostenibilidad</h3>
+          <p>
+            Creemos en un futuro sostenible, implementando procesos ecológicos
+            en todo lo que hacemos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light text-center py-3">
+      <div class="container">
+        <span class="font-bold">©NewTopia</span>
+      </div>
+    </footer>
+  </body>
+</html>
